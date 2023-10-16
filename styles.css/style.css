@@ -1,0 +1,155 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-size: .8rem;
+  }
+
+/* FLOAT Rules */
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+/* Flex Rules */
+.flex-between-centered{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ----------------- Header ----------------- */
+
+nav{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.nav-item{
+    margin: 0 1rem;
+}
+
+
+#logo{
+    height: 5rem;
+    width: 10rem;
+    object-fit: contain;
+}
+
+
+/* ----------------- Main ----------------- */
+
+.album{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Card Rules */
+.container-picture{
+    position: relative;
+    height: 600px ;
+    width: 400px;
+}
+.container-picture img{
+    height: 100% ;
+    width: 100%;
+    object-fit: cover;
+}
+/*Role to Switch Picture  */
+.container-picture:hover .img1{
+    display: none;
+}
+.container-picture .img2{
+    display: none;
+}
+.container-picture:hover .img2{
+    display: block;
+}
+
+.container-picture:hover .like{
+    position: absolute;
+    color: red;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    padding: 1rem;
+    top:0;
+    right: 0;
+}
+
+
+.discount{
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    padding: 3px;
+    bottom:50px;
+    left: 0;
+}
+.green{
+    position: absolute;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    padding: 3px;
+    bottom:50px;
+    left: 50px;
+}
+
+
+
+
+
+
+/* Background Colors */
+
+.bg-blu{
+    background-color: #005aed;
+}
+
+.bg-orange{
+    background-color: #ff6900;
+}
+
+
+/* Font Colors */
+
+.txt-white{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
