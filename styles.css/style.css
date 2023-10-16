@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -41,9 +42,13 @@ body {
 
 /* ----------------- Header ----------------- */
 
+
+
 nav{
     width: 70%;
     margin: 0 auto;
+    max-width: 1120px;
+    min-width:1120px;
 }
 
 .nav-item{
@@ -60,16 +65,23 @@ nav{
 
 /* ----------------- Main ----------------- */
 
-.album{
+.Row{
     width: 70%;
     margin: 0 auto;
+    max-width: 1120px;
+    min-width:1120px;
 }
 
 /* Card Rules */
+.card{
+    width: calc(100% / 3);
+    padding: .5rem;
+}
+
 .container-picture{
     position: relative;
-    height: 600px ;
-    width: 400px;
+    height: 500px ;
+    width: 350px;
 }
 .container-picture img{
     height: 100% ;
@@ -87,7 +99,12 @@ nav{
     display: block;
 }
 
+.like{
+    display: none;
+}
+
 .container-picture:hover .like{
+    display: block;
     position: absolute;
     color: red;
     background-color: antiquewhite;
@@ -96,7 +113,6 @@ nav{
     top:0;
     right: 0;
 }
-
 
 .discount{
     position: absolute;
@@ -116,8 +132,12 @@ nav{
     bottom:50px;
     left: 50px;
 }
+/* ----------------- Footer ----------------- */
 
 
+.footer-nav-item{
+    padding: 2rem 0;
+}
 
 
 
@@ -132,6 +152,10 @@ nav{
     background-color: #ff6900;
 }
 
+.bg-black{
+    background-color:black;
+
+}
 
 /* Font Colors */
 
